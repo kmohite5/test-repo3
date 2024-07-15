@@ -24,7 +24,7 @@ jobs:
         id: demo-1
         uses: peter-evans/create-pull-request@v6
         with:
-          branch: dev_commit_code_branch-temp
+          branch: dailybuild_code_branch
 
       - name: Approve Pull Request1
         uses: juliangruber/approve-pull-request-action@v1
