@@ -39,4 +39,10 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           number: ${{ steps.demo-1.outputs.pull-request-number }}
           method: squash
+ 
+      - name: Delete temp branches after merge
+        uses: dawidd6/action-delete-branch@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          numbers: ${{ steps.demo-1.outputs.pull-request-number }}
 
