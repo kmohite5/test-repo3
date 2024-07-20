@@ -24,7 +24,7 @@ jobs:
         id: demo-1
         uses: peter-evans/create-pull-request@v6
         with:
-          branch: dev_commit_code_branch-temp 
+          branch: dev_commit_code_branch-temp2 
           delete-branch: true
 
       - name: Approve Pull Request1
